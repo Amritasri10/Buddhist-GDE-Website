@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Mail, Phone, MapPin, ArrowRight, Share2 } from 'lucide-react'
+import logo from '../../assets/Buddhist Global Digital Ecosystem Logo.png'
 
 // Inline SVG social icons (lucide-react v1.x removed brand icons)
 const SocialIcons = {
@@ -89,18 +90,16 @@ export default function Footer() {
       </div>
 
       {/* Main footer */}
-      <div className="container-custom py-14">
+      <div className="container-custom py-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-10">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <Link to="/" className="flex items-center gap-3 mb-5">
-              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#C9972A] to-[#7B1C2E] flex items-center justify-center shadow-lg">
-                <span className="text-white text-2xl">☸</span>
-              </div>
-              <div>
-                <div className="font-bold text-white text-lg leading-tight">Buddhist Global</div>
-                <div className="text-[#C9972A] text-sm font-medium">Digital Ecosystem</div>
-              </div>
+            <Link to="/" className="inline-block mb-3">
+              <img
+                src={logo}
+                alt="Buddhist Global Digital Ecosystem"
+                className="h-16 w-auto object-contain"
+              />
             </Link>
             <p className="text-white/60 text-sm leading-relaxed mb-6">
               A unified digital platform connecting Buddhist institutions, monks, researchers, educators,
