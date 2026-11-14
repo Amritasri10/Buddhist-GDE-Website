@@ -1,51 +1,67 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Layout from './components/layout/Layout'
 
-// Pages
-import Home from './pages/Home'
-import About from './pages/About'
-import AboutBuddhism from './pages/AboutBuddhism'
-import Buddha from './pages/Buddha'
-import Knowledge from './pages/Knowledge'
-import KnowledgeDetail from './pages/KnowledgeDetail'
-import Scriptures from './pages/Scriptures'
-import Traditions from './pages/Traditions'
-import Heritage from './pages/Heritage'
-import Festivals from './pages/Festivals'
-import Temples from './pages/Temples'
-import TempleDetail from './pages/TempleDetail'
-import Bhantes from './pages/Bhantes'
-import BhanteDetail from './pages/BhanteDetail'
-import Rituals from './pages/Rituals'
-import Bookings from './pages/Bookings'
-import Education from './pages/Education'
-import Courses from './pages/Courses'
-import CourseDetail from './pages/CourseDetail'
-import Research from './pages/Research'
-import ResearchPublications from './pages/ResearchPublications'
-import Shop from './pages/Shop'
-import ShopDetail from './pages/ShopDetail'
-import Cart from './pages/Cart'
-import Wishlist from './pages/Wishlist'
-import Media from './pages/Media'
-import Travel from './pages/Travel'
-import Hotels from './pages/Hotels'
-import Healthcare from './pages/Healthcare'
-import Restaurants from './pages/Restaurants'
-import Events from './pages/Events'
-import Donations from './pages/Donations'
-import Weddings from './pages/Weddings'
-import Businesses from './pages/Businesses'
-import Community from './pages/Community'
-import Membership from './pages/Membership'
-import Contact from './pages/Contact'
-import FAQ from './pages/FAQ'
-import Login from './pages/Login'
-import Register from './pages/Register'
-import ForgotPassword from './pages/ForgotPassword'
-import PrivacyPolicy from './pages/PrivacyPolicy'
-import Terms from './pages/Terms'
-import NotFound from './pages/NotFound'
+// Core
+import Home from './pages/core/Home'
+import About from './pages/core/About'
+import AboutBuddhism from './pages/core/AboutBuddhism'
+
+// Buddhism
+import Buddha from './pages/buddhism/Buddha'
+import Knowledge from './pages/buddhism/Knowledge'
+import KnowledgeDetail from './pages/buddhism/KnowledgeDetail'
+import Scriptures from './pages/buddhism/Scriptures'
+import Traditions from './pages/buddhism/Traditions'
+import Heritage from './pages/buddhism/Heritage'
+import Festivals from './pages/buddhism/Festivals'
+import Rituals from './pages/buddhism/Rituals'
+
+// Temples & Monks
+import Temples from './pages/temples/Temples'
+import TempleDetail from './pages/temples/TempleDetail'
+import Bhantes from './pages/temples/Bhantes'
+import BhanteDetail from './pages/temples/BhanteDetail'
+import Bookings from './pages/temples/Bookings'
+
+// Education
+import Education from './pages/education/Education'
+import Courses from './pages/education/Courses'
+import CourseDetail from './pages/education/CourseDetail'
+import Research from './pages/education/Research'
+import ResearchPublications from './pages/education/ResearchPublications'
+
+// Commerce
+import Shop from './pages/commerce/Shop'
+import ShopDetail from './pages/commerce/ShopDetail'
+import Cart from './pages/commerce/Cart'
+import Wishlist from './pages/commerce/Wishlist'
+
+// Services
+import Travel from './pages/services/Travel'
+import Hotels from './pages/services/Hotels'
+import Healthcare from './pages/services/Healthcare'
+import Restaurants from './pages/services/Restaurants'
+import Events from './pages/services/Events'
+import Weddings from './pages/services/Weddings'
+import Businesses from './pages/services/Businesses'
+
+// Community
+import Community from './pages/community/Community'
+import Membership from './pages/community/Membership'
+import Donations from './pages/community/Donations'
+import Media from './pages/community/Media'
+
+// Auth
+import Login from './pages/auth/Login'
+import Register from './pages/auth/Register'
+import ForgotPassword from './pages/auth/ForgotPassword'
+
+// Legal & Support
+import PrivacyPolicy from './pages/legal/PrivacyPolicy'
+import Terms from './pages/legal/Terms'
+import FAQ from './pages/legal/FAQ'
+import Contact from './pages/legal/Contact'
+import NotFound from './pages/legal/NotFound'
 
 export default function App() {
   return (
