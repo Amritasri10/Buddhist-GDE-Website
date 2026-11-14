@@ -2,17 +2,7 @@ import { useState } from 'react'
 import { Search } from 'lucide-react'
 import PageHero from '../../components/ui/PageHero'
 import { EventCard } from '../../components/ui/Card'
-
-const EVENTS = [
-  { title: 'Vesak Day Celebration 2027', date: 'May 2027', location: 'Global – 50+ Countries', type: 'Festival', slug: 'vesak-2027' },
-  { title: 'International Meditation Retreat', date: 'Jan 15–25, 2027', location: 'Bodh Gaya, India', type: 'Retreat', slug: 'meditation-retreat-2027' },
-  { title: 'Buddhist Conference on Climate & Compassion', date: 'March 2027', location: 'Bangkok, Thailand', type: 'Conference', slug: 'climate-compassion-2027' },
-  { title: 'Dharma Music Festival', date: 'April 2027', location: 'Kathmandu, Nepal', type: 'Festival', slug: 'dharma-music-2027' },
-  { title: 'Theravada Scholars Symposium', date: 'Feb 2027', location: 'Colombo, Sri Lanka', type: 'Conference', slug: 'scholars-symposium' },
-  { title: 'Tibetan Buddhist Art Exhibition', date: 'June 2027', location: 'New York, USA', type: 'Exhibition', slug: 'tibetan-art-2027' },
-  { title: 'Southeast Asia Sangha Gathering', date: 'July 2027', location: 'Chiang Mai, Thailand', type: 'Retreat', slug: 'sangha-gathering' },
-  { title: 'Enlightenment Day Celebrations', date: 'Dec 2027', location: 'Bodh Gaya, India', type: 'Festival', slug: 'enlightenment-day-2027' },
-]
+import { EVENTS, EVENT_TYPES } from '../../data/services/events'
 
 export default function Events() {
   const [search, setSearch] = useState('')
@@ -38,7 +28,7 @@ export default function Events() {
             <input type="text" placeholder="Search events..." value={search} onChange={(e) => setSearch(e.target.value)} className="input-field pl-10" />
           </div>
           <select value={type} onChange={(e) => setType(e.target.value)} className="input-field w-40">
-            {['All', 'Festival', 'Retreat', 'Conference', 'Exhibition'].map((t) => <option key={t}>{t}</option>)}
+            {EVENT_TYPES.map((t) => <option key={t}>{t}</option>)}
           </select>
         </div>
       </section>
