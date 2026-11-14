@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Eye, EyeOff, Mail, Lock } from 'lucide-react'
+import logo from '../../assets/Buddhist Global Digital Ecosystem Logo.png'
 
 export default function Login() {
   const [show, setShow] = useState(false)

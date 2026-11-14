@@ -6,6 +6,7 @@ import {
   Store, Music, Plane, Building2, Stethoscope, Utensils, Calendar,
   HandHeart, Briefcase, Users, Crown
 } from 'lucide-react'
+import logo from '../../assets/Buddhist Global Digital Ecosystem Logo.png'
 
 const NAV_ITEMS = [
   {
@@ -129,16 +130,14 @@ export default function Header() {
 
       {/* Main header */}
       <div className="container-custom">
-        <div className="flex items-center justify-between h-16 md:h-18">
+        <div className="flex items-center justify-between h-16 md:h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3 flex-shrink-0" onClick={() => setMobileOpen(false)}>
-            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#C9972A] to-[#7B1C2E] flex items-center justify-center shadow-md">
-              <span className="text-white text-lg font-bold">☸</span>
-            </div>
-            <div className="hidden sm:block">
-              <div className="font-bold text-[#2C2C2C] text-base leading-tight">Buddhist Global</div>
-              <div className="text-[#C9972A] text-xs font-medium tracking-wide">Digital Ecosystem</div>
-            </div>
+          <Link to="/" className="flex items-center flex-shrink-0" onClick={() => setMobileOpen(false)}>
+            <img
+              src={logo}
+              alt="Buddhist Global Digital Ecosystem"
+              className="h-auto w-[160px] object-contain mix-blend-multiply"
+            />
           </Link>
 
           {/* Desktop nav */}
