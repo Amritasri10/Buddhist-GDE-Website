@@ -1,8 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Eye, EyeOff, User, Mail, Lock, ChevronDown } from 'lucide-react'
-
-const ROLES = ['Public User', 'Monk / Bhante', 'Monastery Admin', 'Researcher / Scholar', 'Teacher / Instructor', 'Seller / Vendor', 'Travel Agency', 'Hotel Partner', 'Healthcare Partner', 'Restaurant Partner', 'Business Partner', 'Event Organizer']
+import { ROLES } from '../../data/auth/register'
 
 export default function Register() {
   const [show, setShow] = useState(false)

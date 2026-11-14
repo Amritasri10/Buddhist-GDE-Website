@@ -2,20 +2,7 @@ import { useState } from 'react'
 import { Search } from 'lucide-react'
 import PageHero from '../../components/ui/PageHero'
 import { CourseCard } from '../../components/ui/Card'
-
-const COURSES_DATA = [
-  { title: 'Introduction to Buddhism & the Four Noble Truths', instructor: 'Bhante Gunaratana', level: 'Beginner', duration: '6 weeks', price: 0, slug: 'intro-buddhism', category: 'Foundation' },
-  { title: 'Vipassana Meditation: A Complete Guide', instructor: 'Thich Nhat Hanh', level: 'Intermediate', duration: '8 weeks', price: 49, slug: 'vipassana-meditation', category: 'Meditation' },
-  { title: 'Tibetan Buddhist Philosophy', instructor: 'Pema Chödrön', level: 'Advanced', duration: '12 weeks', price: 79, slug: 'tibetan-philosophy', category: 'Philosophy' },
-  { title: 'Pali Language for Beginners', instructor: 'Prof. Ananda Kumar', level: 'Beginner', duration: '10 weeks', price: 39, slug: 'pali-language', category: 'Language' },
-  { title: 'Mindfulness in Daily Life', instructor: 'Ajahn Brahm', level: 'Beginner', duration: '4 weeks', price: 0, slug: 'mindfulness-daily', category: 'Meditation' },
-  { title: 'The Bodhisattva Path', instructor: 'Bhikkhu Bodhi', level: 'Intermediate', duration: '10 weeks', price: 59, slug: 'bodhisattva-path', category: 'Philosophy' },
-  { title: 'Buddhist History & Heritage', instructor: 'Dr. Priya Sharma', level: 'Beginner', duration: '8 weeks', price: 29, slug: 'buddhist-history', category: 'History' },
-  { title: 'Metta: Loving-Kindness Meditation', instructor: 'Bhante Gunaratana', level: 'Beginner', duration: '4 weeks', price: 0, slug: 'metta-meditation', category: 'Meditation' },
-]
-
-const LEVELS = ['All', 'Beginner', 'Intermediate', 'Advanced']
-const CATEGORIES = ['All', 'Foundation', 'Meditation', 'Philosophy', 'Language', 'History']
+import { COURSES_DATA, LEVELS, COURSE_CATEGORIES } from '../../data/education/courses'
 
 export default function Courses() {
   const [search, setSearch] = useState('')
@@ -49,7 +36,7 @@ export default function Courses() {
               {LEVELS.map((l) => <option key={l}>{l}</option>)}
             </select>
             <select value={category} onChange={(e) => setCategory(e.target.value)} className="input-field w-40">
-              {CATEGORIES.map((c) => <option key={c}>{c}</option>)}
+              {COURSE_CATEGORIES.map((c) => <option key={c}>{c}</option>)}
             </select>
             <select value={priceFilter} onChange={(e) => setPriceFilter(e.target.value)} className="input-field w-36">
               {['All', 'Free', 'Paid'].map((p) => <option key={p}>{p}</option>)}

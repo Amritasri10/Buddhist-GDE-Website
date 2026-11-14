@@ -2,12 +2,7 @@ import { Link } from 'react-router-dom'
 import PageHero from '../../components/ui/PageHero'
 import SectionHeader from '../../components/ui/SectionHeader'
 import { ArrowRight } from 'lucide-react'
-
-const PACKAGES = [
-  { name: 'Simple Buddhist Blessing', price: 'From $500', includes: ['Monk ceremony (1–2 hrs)', 'Puja & chanting', 'Basic floral arrangements', 'Digital photos'], icon: '🕯️' },
-  { name: 'Traditional Buddhist Wedding', price: 'From $2,500', includes: ['Full monk ceremony (3–4 hrs)', 'Venue decoration', 'Catering (50 guests)', 'Photography', 'Wedding coordinator'], icon: '💒' },
-  { name: 'Destination Buddhist Wedding', price: 'From $8,000', includes: ['Sacred site ceremony', 'Full venue & catering', 'Photography & videography', 'Hotel accommodation', 'Travel coordination', 'Dedicated planner'], icon: '✈️' },
-]
+import { WEDDING_PACKAGES as PACKAGES } from '../../data/services/weddings'
 
 export default function Weddings() {
   return (
