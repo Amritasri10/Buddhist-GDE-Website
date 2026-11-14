@@ -6,4 +6,4 @@
 
 export const API_BASE_URL = import.meta.env.VITE_API_BASE_URL
 export const SIGNUP_URL   = import.meta.env.VITE_SIGNUP_URL
-export const COOKIE_NAME  = import.meta.env.VITE_COOKIE_NAME
+export const COOKIE_NAME = import.meta.env.VITE_COOKIE_NAME || "buddh_auth_token";

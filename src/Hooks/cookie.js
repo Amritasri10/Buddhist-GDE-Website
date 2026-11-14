@@ -1,5 +1,5 @@
 import Cookies from 'js-cookie'
-import { COOKIE_NAME } from '../constants'
+import { COOKIE_NAME } from '../constants/index'
 
 // ─────────────────────────────────────────────
 //  GENERIC COOKIE UTILS
